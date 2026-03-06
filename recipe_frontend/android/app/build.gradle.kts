@@ -7,9 +7,10 @@ plugins {
 
 android {
     namespace = "com.example.recipe_frontend"
-        ndkVersion = "27.0.12077973"
+    // Keep NDK aligned with the highest version required by Android plugins.
+    // (shared_preferences_android + sqflite_android currently require 27.0.12077973)
+    ndkVersion = "27.0.12077973"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
