@@ -19,7 +19,6 @@ void main() {
       ),
     );
 
-    // Initial state is splash until auth provider bootstraps.
     await tester.pump(const Duration(milliseconds: 10));
     expect(find.byType(RecipeHubApp), findsOneWidget);
   });
